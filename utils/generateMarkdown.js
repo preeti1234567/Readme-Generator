@@ -1,7 +1,8 @@
 function generateMarkdown(data) {
   return `
-  # Project Title 
-  ${data.project_title}
+  # ${data.project_title}
+
+  ${genrateBadges(data.badges)}
 
   ## Project Detail 
   ${data.description}
@@ -10,39 +11,48 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table Of Content
-  ${tableOfContent(data.table_of_content)}
+  ${convertIntoList(data.table_of_content)}
   
-  ###  Installation Required 
+  ##  Installation Required 
   ${data.installation}
 
-  # Usage 
+  ## Usage 
   ${data.usage}
 
   ## License information: 
   ${data.license}
 
   ## Contributors: 
-  ${data.contributing}
+  ${convertIntoList(data.contributing)}
 
   ## Tests 
-  ${data.tests}
+      ${data.tests}
 
   ## Questions 
   ${data.questions}
-  `
+
+  ## Profile url: <${data.github_url}/${data.userName}>
+
+  ![](${data.github_url}/${data.userName}.png?size=200)
+  
+  ## Repositary url <${data.github_url}/${data.userName}/${data.repositary_name}>
+  `;
 }
 
-function tableOfContent (data)
-{
-  return '* ' + data.split(',').join('\n * ');
+function convertIntoList(data) {
+  return "* " + data.split(",").join("\n * ");
 }
 
-// function badges(confirmBadge)
-// {
-// if inquirer.prompt(confirmBadge)
-// {
-//   (https://img.shields.io/github/contributors/badges/shields)
+function genrateBadges(badges){
 
-// })
+ return `
+  ${badges.map(badge => {
+    if(badge === 'Website up')
+     return "[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)";
+    else if(badge === 'Website down' )
+     return "[![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](http://cv.lbesson.qc.to/)";
+  }).join(' ')}
+  `;
+}
 
 module.exports = generateMarkdown;
