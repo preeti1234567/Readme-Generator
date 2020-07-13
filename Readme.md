@@ -1,47 +1,40 @@
 
-  # Read-Me Generator
+  # 
 
   
-  [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/) [![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](http://cv.lbesson.qc.to/) [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/)
+  [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/) [![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](http://cv.lbesson.qc.to/)
   
 
   ## Project Detail 
-  When we run "node index.js", user will be asked for questions and after giving answers it will generate readme file
+  ddsf
 
  
   ## Table Of Content
-  * Installation
- *  Usage
- *  License
- *  Contributing
- *  Tests
- *  Questions
- *  User Github profile picture
- *  user github email
+  * df
   
   ##  Installation Required 
-  node
+  asdf
 
   ## Usage 
-  run node index.js
+  sdf
 
   ## License information: 
-  Copyright (c) 2020 Preeti Gupta Licensed under the MIT license.
+  sdf
 
   ## Contributors: 
-  * preeti
+  * dsaf
 
   ## Tests 
-      run index.js
+      sdaf
 
   ## Questions 
-  no
+  dsf
 
-  ## Profile url: <https://github.com/preeti1234567>
+  ## Profile url: <dsf/asdf>
 
-  ![](https://github.com/preeti1234567.png?size=200)
+  ![](dsf/asdf.png?size=200)
   
-  ## Repositary url <https://github.com/preeti1234567/README-GENERATOR>
+  ## Repositary url <dsf/asdf/asdf>
 
   ![Readme File Generator Demo](ReadmeGenerator.gif)
 

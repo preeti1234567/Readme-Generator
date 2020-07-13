@@ -35,7 +35,7 @@ function generateMarkdown(data) {
   
   ## Repositary url <${data.github_url}/${data.userName}/${data.repositary_name}>
 
-  ![Readme File Generator Demo](demo/video.mp4)
+  ![Readme File Generator Demo](ReadmeGenerator.gif)
 
   `;
 }
