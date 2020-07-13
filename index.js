@@ -94,7 +94,7 @@ const questions = [
 ];
 
 async function writeToFile(data) {
-  await writeFileAsync("GoodReadme.md", generateMarkdown(data));
+  await writeFileAsync("Readme.md", generateMarkdown(data));
 
   console.log("Successfully generated Mardown file.");
 }
