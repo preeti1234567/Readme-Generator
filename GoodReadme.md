@@ -43,6 +43,6 @@
   
   ## Repositary url <https://github.com/preeti1234567/README-GENERATOR>
 
-  ![Readme File Generator Demo](video.mp4)
+  ![Readme File Generator Demo](Readme.gif)
 
   
