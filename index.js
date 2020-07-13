@@ -35,7 +35,7 @@ const questions = [
     type: "checkbox",
     message: "Select Badges",
     name: "badges",
-    choices: ['Website up', 'Website down'],
+    choices: ['Website up', 'Website down','GitHub contributors', 'GitHub stars'],
     validate: function (answer) {
       if (answer.length < 1) {
         return 'You must choose at least one badges.';
@@ -89,12 +89,12 @@ const questions = [
   {
     type: "input",
     name: "questions",
-    message: "Any Question",
+    message: "Any Questions",
   }
 ];
 
 async function writeToFile(data) {
-  await writeFileAsync("2pac.md", generateMarkdown(data));
+  await writeFileAsync("GoodReadme.md", generateMarkdown(data));
 
   console.log("Successfully generated Mardown file.");
 }
